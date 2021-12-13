@@ -1,13 +1,13 @@
 httpbeat:
   hosts:
     -
-      schedule: "@every 2h"
+      schedule: "@every 3h"
       url: "https://api.clashroyale.com/v1/locations/global/rankings/players"
       method: get
       
       headers:
         Accept: application/json
-        authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImFkOGNjY2RhLTg4MjEtNGI0ZS1hZGYyLTZkZTMwZjkzM2IzMSIsImlhdCI6MTYzOTM4NDQ1Niwic3ViIjoiZGV2ZWxvcGVyLzk1YjY5ZTE5LTgzOGUtMzg0Ny03ZDdiLTUzODY4OWQyZDliZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI5Mi4xODQuMTAyLjE4OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.8Q3_cTGEVfl6o6rW4pJT_tHUK7Sq3HfMOSW3hRK09BRp6OzWqJB6-eGtAUtM5S0WdQCQqJIXBhpKttyZ8WrHhQ
+        authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImY5Njc0OGE5LTgyZmQtNDA2MS1hNzVmLTBkZDMyYTM3YWM3OCIsImlhdCI6MTYzOTM4ODMyNSwic3ViIjoiZGV2ZWxvcGVyLzk1YjY5ZTE5LTgzOGUtMzg0Ny03ZDdiLTUzODY4OWQyZDliZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI5Mi4xODQuMTAyLjE4OSIsIjEzNC4yMTQuMjAyLjM3Il0sInR5cGUiOiJjbGllbnQifV19.9gwE0wAd9Syk_9v8qHGv1nVd6DG5-nY9qml7dMviyXOWLLKro2KdQw_nZCMJGi03aVuATpKEbCqX_3P-5RnztA
              
       output_format: json
   
