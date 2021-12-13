@@ -1,13 +1,13 @@
 httpbeat:
   hosts:
     -
-      schedule: "@every 5m"
+      schedule: "@every 2h"
       url: "https://api.clashroyale.com/v1/locations/global/rankings/players"
       method: get
       
       headers:
         Accept: application/json
-        authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4MDcwY2NiLWZjYTUtNDZjYS1hOTU1LWUxOWMxY2FmODRiOCIsImlhdCI6MTYzOTI2MTg5Nywic3ViIjoiZGV2ZWxvcGVyLzk1YjY5ZTE5LTgzOGUtMzg0Ny03ZDdiLTUzODY4OWQyZDliZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyIzNy4xNDMuNTUuMTcwIiwiMTM0LjIxNC4yMDIuMjYiLCIxMzQuMjE0LjIwMi4zNyJdLCJ0eXBlIjoiY2xpZW50In1dfQ.iy0qevinurN44EcNw7w2uQfbJCXy2mXF1iFxHEXdsQd9Ohzd-HZfnNrkdW4BseWnWbEYO_v0_Y9BESv9oosMcQ
+        authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImFkOGNjY2RhLTg4MjEtNGI0ZS1hZGYyLTZkZTMwZjkzM2IzMSIsImlhdCI6MTYzOTM4NDQ1Niwic3ViIjoiZGV2ZWxvcGVyLzk1YjY5ZTE5LTgzOGUtMzg0Ny03ZDdiLTUzODY4OWQyZDliZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI5Mi4xODQuMTAyLjE4OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.8Q3_cTGEVfl6o6rW4pJT_tHUK7Sq3HfMOSW3hRK09BRp6OzWqJB6-eGtAUtM5S0WdQCQqJIXBhpKttyZ8WrHhQ
              
       output_format: json
   
@@ -15,7 +15,7 @@ output.elasticsearch:
   # Avec l'ordi de départ
   # hosts: ["localhost:9201"]
   hosts: ["tc405-112-12.insa-lyon.fr:9201"]
-  index: "clashroyaletemp"
+  index: "clashroyalefinal"
   template.enabled: false
 
 # output.file:
