@@ -1,7 +1,7 @@
 httpbeat:
   hosts:
     -
-      schedule: "@every 3h"
+      schedule: "@every 5m"
       url: "https://api.clashroyale.com/v1/locations/global/rankings/players"
       method: get
       
